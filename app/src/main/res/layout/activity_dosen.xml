@@ -5,29 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context=".actifity.DosenActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_margin="20dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/dosen"/>
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="30dp"
-            android:text="Hidra Amnur, S.Kom., SE., M.Kom."
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:text="Hidra Amnur"
+            android:layout_toRightOf="@+id/img"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
             android:fontFamily="@font/quicksand_bold" />
 
         <TextView
             android:id="@+id/nip"
+            android:layout_toRightOf="@+id/img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="5dp"
             android:textSize="18sp"
+            android:layout_below="@+id/name"
             android:text="19820415 201212 1 002"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:fontFamily="@font/quicksand_semi_bold" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/menu"
@@ -36,7 +50,7 @@
         android:layout_marginTop="20dp"
         android:text="MENU DOSEN"
         android:layout_gravity="center"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         android:fontFamily="@font/quicksand_bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -130,7 +144,7 @@
             android:id="@+id/cardReport"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             app:cardCornerRadius="4dp"
             app:layout_constraintEnd_toStartOf="@+id/cardQuis"
             app:layout_constraintStart_toStartOf="parent"

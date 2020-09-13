@@ -43,36 +43,42 @@
             android:layout_marginTop="8dp"
             android:drawableLeft="@drawable/ic_account"
             android:fontFamily="@font/quicksand_semi_bold"
-            android:hint="Student's Number"
+            android:hint="NIM"
             android:inputType="text"
             android:maxLines="1"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/black"
-            android:textSize="16sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtAdd" />
 
         <TextView
+            android:id="@+id/txtStat"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="Status Mahasiswa"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editNim" />
 
 
         <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvStat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNim" />
+            android:id="@+id/rvStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStat" />
 
-    <Button
+        <Button
         android:id="@+id/btnAdd"
         android:layout_width="250dp"
         android:layout_height="wrap_content"

@@ -34,7 +34,7 @@ public class ReportActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report);
-        getSupportActionBar().setTitle("Attendance Report");
+        getSupportActionBar().setTitle("Report");
         AndroidNetworking.initialize(this);
         rvKelas = findViewById(R.id.rv_reportkls);
         rvKelas.setHasFixedSize(true);

@@ -34,7 +34,6 @@ public class QrActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imgQr);
         Picasso.get().load("http://absen.dataku.xyz/api/tmp/"+idqr+".png").into(imageView);
 
-        btnDownload = findViewById(R.id.btnDownload);
         btnDownload.setVisibility(View.GONE);
         btnDownload.setOnClickListener(new View.OnClickListener() {
             @Override

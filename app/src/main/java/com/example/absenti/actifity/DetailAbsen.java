@@ -36,6 +36,7 @@ public class DetailAbsen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setTitle("Detail Scanning");
         setContentView(R.layout.activity_detail_absen);
         AndroidNetworking.initialize(this);
         rv_absen = findViewById(R.id.rv_mhs);

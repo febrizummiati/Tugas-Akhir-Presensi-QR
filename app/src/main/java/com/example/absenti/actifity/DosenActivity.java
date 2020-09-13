@@ -104,15 +104,6 @@ public class DosenActivity extends AppCompatActivity {
             }
         });
 
-        cardQuis = findViewById(R.id.cardQuis);
-        cardQuis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent q = new Intent(DosenActivity.this, QuisActivity.class);
-                startActivity(q);
-            }
-        });
-
     }
 
     private void getDosen() {

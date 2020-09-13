@@ -17,6 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nama Matkul"
+        android:textSize="18sp"
+        android:fontFamily="@font/quicksand_bold"
         android:id="@+id/txtMatkul"
         android:textColor="#000"/>
     <RelativeLayout
@@ -27,12 +29,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama Kelas"
+            android:fontFamily="@font/quicksand_semi_bold"
+            android:textSize="17sp"
             android:id="@+id/txtKelas" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selasa 20 Juni 2020"
+            android:text="Selasa,20 September 2020"
             android:layout_marginRight="50dp"
+            android:fontFamily="@font/quicksand_semi_bold"
             android:layout_alignParentRight="true"
             android:id="@+id/txtTgl" />
     </RelativeLayout>
