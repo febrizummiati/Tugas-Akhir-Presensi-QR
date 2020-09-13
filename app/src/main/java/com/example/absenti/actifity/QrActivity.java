@@ -34,15 +34,16 @@ public class QrActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imgQr);
         Picasso.get().load("http://absen.dataku.xyz/api/tmp/"+idqr+".png").into(imageView);
 
-        btnDownload.setVisibility(View.GONE);
-        btnDownload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getIntent());
-                String idqr = intent.getStringExtra("IDQR");
-                new DownloadImage().execute("http://absen.dataku.xyz/api/tmp/"+idqr+".png");
-            }
-        });
+//        btnDownload = findViewById(R.id.btnDownload);
+//        btnDownload.setVisibility(View.GONE);
+//        btnDownload.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getIntent());
+//                String idqr = intent.getStringExtra("IDQR");
+//                new DownloadImage().execute("http://absen.dataku.xyz/api/tmp/"+idqr+".png");
+//            }
+//        });
 //        Bitmap bitmap = getIntent().getParcelableExtra("pic");
 //        imageView.setImageBitmap(bitmap);
 

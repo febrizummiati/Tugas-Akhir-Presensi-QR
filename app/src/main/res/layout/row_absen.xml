@@ -13,9 +13,9 @@
         android:id="@+id/namaAbsen"
         android:text="Nama Siswa"
         android:layout_margin="5dp"
-        android:fontFamily="@font/quicksand_bold"
+        android:fontFamily="@font/quicksand_semi_bold"
         android:textColor="@android:color/black"
-        android:textSize="18sp"/>
+        android:textSize="17sp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
         android:layout_alignParentRight="true"
         android:text="Hadir"
         android:layout_margin="5dp"
-        android:textSize="18sp"
+        android:textSize="17sp"
         android:fontFamily="@font/quicksand_semi_bold"
         android:textColor="#27ae60"/>
 
