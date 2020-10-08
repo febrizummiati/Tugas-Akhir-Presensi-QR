@@ -3,6 +3,7 @@ package com.example.absenti.actifity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -118,7 +119,12 @@ public class MhsActivity extends AppCompatActivity implements ZXingScannerView.R
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.action_about) {
+        if(item.getItemId()== R.id.action_spada){
+            String url = "http://spadati.dataku.xyz/";
+            Intent intentSpada = new Intent(Intent.ACTION_VIEW);
+            intentSpada.setData(Uri.parse(url));
+            startActivity(intentSpada);
+        } else if(item.getItemId() == R.id.action_about) {
             Intent setIntent = new Intent(MhsActivity.this, AboutActivity.class);
             startActivity(setIntent);
         }else if (item.getItemId() == R.id.action_logout) {

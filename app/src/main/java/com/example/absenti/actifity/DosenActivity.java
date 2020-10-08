@@ -3,6 +3,7 @@ package com.example.absenti.actifity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,7 +26,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class DosenActivity extends AppCompatActivity {
-    CardView cardGenerate, cardAdd, cardReport, cardQuis;
+    CardView cardGenerate, cardAdd, cardReport, cardWeb;
     TextView nama, nip;
     SharedPrefManager sharedPrefManager;
 
@@ -37,7 +38,12 @@ public class DosenActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.action_about) {
+        if (item.getItemId()== R.id.action_spada){
+            String url = "http://spadati.dataku.xyz/";
+            Intent intentSpada = new Intent(Intent.ACTION_VIEW);
+            intentSpada.setData(Uri.parse(url));
+            startActivity(intentSpada);
+        }else if (item.getItemId() == R.id.action_about) {
             Intent setIntent = new Intent(DosenActivity.this, AboutActivity.class);
             startActivity(setIntent);
         }else if (item.getItemId() == R.id.action_logout) {
@@ -101,6 +107,17 @@ public class DosenActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent r = new Intent(DosenActivity.this, ReportActivity.class);
                 startActivity(r);
+            }
+        });
+
+        cardWeb = findViewById(R.id.cardWeb);
+        cardWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String web = "https://absen.dataku.xyz:2083";
+                Intent intentWeb = new Intent(Intent.ACTION_VIEW);
+                intentWeb.setData(Uri.parse(web));
+                startActivity(intentWeb);
             }
         });
 

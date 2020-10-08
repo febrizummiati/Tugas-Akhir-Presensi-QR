@@ -79,7 +79,7 @@ public class RegisterMhsActivity extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(),"SUCCESSFUL", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(RegisterMhsActivity.this, LoginMhsActivity.class));
                             }else {
-                                Toast.makeText(getApplicationContext(),"Gagal Register "+response.getString("code"), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),"NIM and Name was Used", Toast.LENGTH_SHORT).show();
                             }
 
                         } catch (JSONException e) {

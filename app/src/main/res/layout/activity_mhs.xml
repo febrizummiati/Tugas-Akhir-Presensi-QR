@@ -6,31 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".actifity.MhsActivity">
 
-<!--    <RelativeLayout-->
-<!--        android:background="@color/colorPrimary"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-<!--        <TextView-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:text="Mahasiswa"-->
-<!--            android:layout_marginLeft="12dp"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"/>-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/exit"-->
-<!--            android:src="@drawable/ic_exit"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:onClick="exit"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"/>-->
-<!--        <ImageView-->
-<!--            android:src="@drawable/ic_settings"-->
-<!--            android:layout_toLeftOf="@id/exit"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"/>-->
-<!--    </RelativeLayout>-->
-
     <ImageView
         android:id="@+id/logo_ti"
         android:layout_width="150dp"
@@ -50,7 +25,6 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/quicksand_bold"
         android:text="WELCOME"
-        android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/editEmail"
@@ -111,5 +85,20 @@
                 android:layout_margin="15dp"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
+
+<!--    <Button-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/btnSpadati"-->
+<!--        android:text="Open Spada"-->
+<!--        android:fontFamily="@font/quicksand_bold"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="16dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/cardMhs"-->
+<!--        android:layout_marginTop="30dp"/>-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

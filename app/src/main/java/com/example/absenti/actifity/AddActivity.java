@@ -131,7 +131,7 @@ public class AddActivity extends AppCompatActivity {
                         try {
                             Toast.makeText(mContext, "SUCCESSFUL", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(mContext, LoginActivity.class));
-                            if (!response.getString("response").equalsIgnoreCase("Success!")) {
+                            if (!response.getString("response").equalsIgnoreCase("SUCCESSFUL")) {
                                 String error_msg = response.getString("response");
                                 Toast.makeText(mContext, error_msg, Toast.LENGTH_SHORT).show();
                                 Intent intent= new Intent(AddActivity.this, AddActivity.class);

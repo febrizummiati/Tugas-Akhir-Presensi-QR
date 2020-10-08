@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_spada"
+        android:icon="@drawable/ic_class_bar"
+        android:title="SPADATI"
+        app:showAsAction="ifRoom|withText"/>
+
     <item
         android:id="@+id/action_about"
         android:icon="@drawable/ic_info"
@@ -12,4 +19,5 @@
         android:icon="@drawable/ic_exit"
         android:title="Log Out"
         app:showAsAction="ifRoom|withText"/>
+
 </menu>

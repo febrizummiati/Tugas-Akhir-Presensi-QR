@@ -75,7 +75,7 @@ public class AdapterKelas extends RecyclerView.Adapter<AdapterKelas.ListViewHold
                 public void onClick(View v) {
                     new AlertDialog.Builder(context)
                             .setTitle("Perhatian")
-                            .setMessage("Apakah anda yakin untuk menghapus jadwal perkuliahan ini?")
+                            .setMessage("Hapus jadwal perkuliahan ini?")
                             .setCancelable(false)
                             .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     tools:context=".actifity.AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/foto"
@@ -152,7 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Politeknik Negeri Padang"
+                android:text="Politeknik Negeri Padang - TI"
                 android:textColor="@android:color/black"
                 android:textSize="15dp"
                 android:fontFamily="@font/quicksand_semi_bold"/>
@@ -189,4 +193,46 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_dosbing"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_wa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Dosen Pembimbing :"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/quicksand_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="      Hidra Amnur, S.Kom.,SE.,M.Kom"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:fontFamily="@font/quicksand_semi_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="      Dwiny Meidelfi, S.Kom.,M.Cs"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:fontFamily="@font/quicksand_semi_bold"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
